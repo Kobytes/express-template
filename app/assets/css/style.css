@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #252525;
+    font-size: 24px;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.resize {
+    margin-top: 50px;
+    width: 100px;
+    height: auto;
+}
+
+.rotation {
+    animation: rotation 6s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.github-link {
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.github-link img {
+    width: 75px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.github-link:hover img {
+    transform: scale(1.1);
+}
+
+.colored {
+    font-weight: 700;
+    color: transparent;
+    background: linear-gradient(45deg, #529247, #c3e359);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    width: fit-content;
+    border-bottom: 3px #529247 solid;
+}
+
+.colored-sass {
+    font-weight: 700;
+    color: transparent;
+    background: linear-gradient(45deg, #c69, rgb(208, 71, 139));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    width: fit-content;
+}
+
+.margin {
+    margin-top: 50px;
+}
+
+.margin-bot {
+    margin-bottom: 50px;
+}
+
+.margin-min {
+    margin-top: 10px;
+}
+
+.muted {
+    margin-top: 20px;
+    color: #a0a0a0;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.colored-star {
+    font-weight: 700;
+    color: transparent;
+    background: linear-gradient(45deg, #ffe100, #ffee00);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    width: fit-content;
+}
